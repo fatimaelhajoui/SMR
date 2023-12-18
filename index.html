@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=Lato:wght@400;700&family=Roboto:wght@100&family=Ubuntu:ital,wght@0,300;1,300&display=swap" 
+     rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="style.css">
+
+    <!----css animation aos---->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+    <title>SMR DEALS</title>
+
+</head>
+
+
+<body>
+
+<!------------------------NavBar and Section 1------------------------>
+    <section class="header" id="header">
+      <nav>
+      <a href="index.html"><img src="logo2.png" alt=""></a>
+      <div class="nav-links" id="NavLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact US</a></li>
+          </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box"  >
+          <h1>SMR DEALS</h1>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla corporis optio tempora corrupti voluptatum 
+          <br> voluptas voluptate ipsa aperiam.</P>
+          <a href="#contact" class="hero-btn">Contact Us</a>
+      </div>
+    </section>
+
+<!-------------------------Section 2---------------------------->
+
+<!----------About US------------>
+<div class="about" id="about">
+
+    <div class="row">
+      <div class="about-col" data-aos="slide-right" data-aos-duration="2000">
+        <h1>About SMR Deals</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Pariatur laborum neque eveniet laudantium, iusto, dolore ipsam expedita voluptatem eum suscipit,
+             minus doloremque asperiores nostrum doloribus reiciendis porro dignissimos sequi excepturi!
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+             Pariatur laborum neque eveniet laudantium, iusto, dolore ipsam expedita voluptatem eum suscipit,
+             minus doloremque asperiores nostrum doloribus reiciendis porro dignissimos sequi excepturi!</p>
+      </div>
+      <div class="about-col" data-aos="slide-left" data-aos-duration="2000">
+        <img src="about.jpg" alt="">
+      </div>
+    </div>
+
+</div>
+<!----------Back to top button------------>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:30px"></i></button>
+<!----------Counter Wrapper------------>
+<div class="counters">
+    <div>
+        <div class="counter" data-aos="slide-up" data-aos-duration="1000">
+            <h1><span class="num" data-val="250">0</span></h1>
+            <p>Clients Satisfaits</p>
+        </div>
+
+        <div class="counter" data-aos="slide-up" data-aos-duration="1000" >
+            <h1><span class="num" data-val="16">0</span>+</h1>
+            <p>Années D'expérience</p>
+        </div>
+
+        <div class="counter" data-aos="slide-up" data-aos-duration="1000">
+            <h1><span class="num" data-val="180">0</span></h1>
+            <p>Projets Terminés</p>
+        </div>
+    </div>
+</div>
+
+<!----------Services----------->
+<div class="services" id="services">
+    <div class="container-fluid">
+        <h1>Notre Services</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card" style="border-color: #198754;" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="cashier.png" class="card-img-top"
+                  alt="Hollywood Sign on The Hill" />
+                <div class="card-body">
+                  <h5 class="card-title"  style="color: #198754;">SMR Le MAitre</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                  <div class="text-center">
+                    <button type="button" class="btn" style="    
+                    background-color: #198754; 
+                    border: 1px solid #198754;
+                    background-color: #198754;
+                    border: 1px solid #198754;
+                    color: white;
+                    border-radius: revert;">Explorer Plus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="border-color: #ffae00;" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="accounting.png" class="card-img-top"
+                  alt="Palm Springs Road" />
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #ffae00;">SMR Gestion</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <div class="text-center">
+                    <button type="button" class="btn" style="    
+                    background-color: #ffae00; 
+                    border: 1px solid #ffae00;
+                    background-color: #ffae00;
+                    border: 1px solid #ffae00;
+                    color: white;
+                    border-radius: revert;">Explorer Plus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="border-color: #002fff;" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="solar-cell.png" class="card-img-top"
+                  alt="Los Angeles Skyscrapers" />
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #002fff;">SMR Energy</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer..</p>
+                  <div class="text-center">
+                        <button type="button" class="btn" style="    
+                        background-color: #002fff; 
+                        border: 1px solid #002fff;
+                        background-color: #002fff;
+                        border: 1px solid #002fff;
+                        color: white;
+                        border-radius: revert;">Explorer Plus</button>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="border-color: #FF0000;" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="cpu.png" class="card-img-top"
+                  alt="Skyscrapers" />
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #FF0000;">SMR Hardware</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                  <div class="text-center">
+                    <button type="button" class="btn" style="    
+                    background-color: #FF0000; 
+                    border: 1px solid #FF0000;
+                    background-color: #FF0000;
+                    border: 1px solid #FF0000;
+                    color: white;
+                    border-radius: revert;">Explorer Plus</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    </div>
+</div>
+
+
+
+  <!-- client -->
+
+  <div class="container text-center">
+    <div class="row mb-5">
+      <h1 class="text-center font-weight-bold" style="padding-top: 0;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;">Notre Clients</h1>
+    </div>
+    <div class="row multiple-items text-center">
+
+      <div class="slide"><img src="8j.jpg" alt="Huitième Jour"></div>
+      <div class="slide"><img src="andalous.jpg" alt="Hotel Luxury El Andalous"></div>
+      <div class="slide"><img src="park.jpg" alt="Park Meknès"></div>
+      <div class="slide"><img src="alaska.png" alt="CAFE ALASKA Tinejdad"></div>
+      <div class="slide"><img src="aladdin.jpg" alt="Palais Aladdin Meknès"></div>
+      <div class="slide"><img src="marina.jpg" alt="MARINASLA"></div>
+      <div class="slide"><img src="katafish.jpg" alt="KATAFISH Meknès"></div>
+
+
+
+    </div>
+  </div>
+  <script>
+    $('.multiple-items').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+
+      ]
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+  <!-- end client -->
+
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      
+     
+      <div class="container-fluid">
+        <h1>Contactez Nous</h1>
+         <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4 " data-aos="slide-right" data-aos-duration="2000">
+            <h2>Heurs d’ouverture</h2>
+                <p style="font-family: 'Josefin Sans', sans-serif;">Lundi À Samedi...........de 9:30h à 20h </p>
+            <h2>Téléphone</h2>
+                <p style="font-family: 'Josefin Sans', sans-serif;"> 05 35 53 67 01 </p>
+             <h2>Adresse</h2>
+                 <p style="font-family: 'Josefin Sans', sans-serif;">No 11, Lot Nadoua Av Abdelkrim Khattabi Touargua, Meknes, Maroc</p>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13250.34144392803!2d-5.5589483!3d33.8745753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda045a9b78967c5%3A0xf0d89a669c1b71b9!2sSmart%20Deals%20morocco!5e0!3m2!1sen!2sma!4v1702632983164!5m2!1sen!2sma" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="160px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4 " data-aos="slide-left" data-aos-duration="2000">
+         
+           <form action="" method="POST" >
+  
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+  
+  
+              <div class="form-group">
+                  <label class="txt">Nom & Prenom :</label>
+                  <input type="text" name="name" class="form-control" required >
+              </div>
+             
+              <div class="form-group">
+                  <label class="txt">Email :</label>
+                  <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label class="txt">Sujet :</label>
+                  <input type="text" name="subject" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label class="txt">Message:</label>
+                  <textarea class="form-control" name="message"  rows="5" ></textarea>
+                </div>
+  
+                <br> 
+              <input type="submit" class="btn " value="Envoyer" style="font-size: 20px; color:white; background-color: #2a5291;" >
+            </form>
+          </div>
+       </div>
+       
+         
+       </div>
+     
+     </div>
+
+     <br>
+     
+      
+     <br><br><br>
+     <!-- end contact -->
+
+
+     <footer class=" text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" >
+        © 2023 Copyright
+      </div>
+      <!-- Copyright -->
+    </footer>
+<!--------------------------JavaScript Toggel Menu----------------------->
+
+    <script>
+      
+var navLinks= document.getElementById("NavLinks");
+function showMenu(){
+    navLinks.style.right ="0";
+}
+function hideMenu(){
+    navLinks.style.right="-300px";
+}
+
+    </script>
+
+<script src="code.js"></script>
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
