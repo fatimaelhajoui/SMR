@@ -35,9 +35,7 @@
 
      <link rel="stylesheet" href="style.css">
 
-    <!----css animation aos---->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>SMR DEALS</title>
 
 </head>
@@ -50,7 +48,7 @@
       <nav>
       <a href="index.html"><img src="logo2.png" alt=""></a>
       <div class="nav-links" id="NavLinks">
-        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -90,11 +88,11 @@
 
 </div>
 <!----------Back to top button------------>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:30px"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:30px;"></i></button>
 <!----------Counter Wrapper------------>
 <div class="counters">
-    <div>
-        <div class="counter" data-aos="slide-up" data-aos-duration="1000">
+    <div class="container-fluid" style=" overflow-x: hidden; overflow-y: hidden;">
+        <div class="counter" data-aos="slide-up" data-aos-duration="1000" >
             <h1><span class="num" data-val="250">0</span></h1>
             <p>Clients Satisfaits</p>
         </div>
@@ -208,8 +206,8 @@
 
 
   <!-- client -->
-
-  <div class="container text-center">
+<div class="clients">
+<div class="container text-center" ">
     <div class="row mb-5">
       <h1 class="text-center font-weight-bold" style="padding-top: 0;
       font-size: 50px;
@@ -217,7 +215,7 @@
       text-align: center;
       margin-bottom: 30px;">Notre Clients</h1>
     </div>
-    <div class="row multiple-items text-center">
+    <div class="row multiple-items text-center" style=" overflow-x: hidden; overflow-y: hidden;">
 
       <div class="slide"><img src="8j.jpg" alt="Huitième Jour"></div>
       <div class="slide"><img src="andalous.jpg" alt="Hotel Luxury El Andalous"></div>
@@ -231,6 +229,8 @@
 
     </div>
   </div>
+</div>
+  
   <script>
     $('.multiple-items').slick({
       dots: true,
@@ -352,16 +352,19 @@
       
 var navLinks= document.getElementById("NavLinks");
 function showMenu(){
-    navLinks.style.right ="0";
+    navLinks.style.display = "block";
+    navLinks.style.right = "0px";
 }
 function hideMenu(){
-    navLinks.style.right="-225px";
+    
+  navLinks.style.display ="none";
 }
+ </script>
 
-    </script>
-
+    <!--------------------------JavaScript counter---------------------->
 <script src="code.js"></script>
 
+<!--------------------------JavaScript back to top----------------------->
 <script>
   // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -384,7 +387,9 @@ function topFunction() {
 }
 
 </script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
   AOS.init();
 </script>
